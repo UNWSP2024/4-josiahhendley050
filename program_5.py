@@ -9,7 +9,6 @@
 # 2/13/26
 # Bank Balance
 
-
 def main():
     budget = 0.0
     difference = 0.0
@@ -27,11 +26,11 @@ def main():
     # Set total_expenses = 0
     #
     # Display "Enter your expenses for the month."
-    # Display "Enter -1 when you are finished."
+    # Display "Enter 0 when you are finished."
     #
     # Input expense
     #
-    # WHILE expense is not equal to -1
+    # WHILE expense is not equal to 0
     #       total_expenses = total_expenses + expense
     #       Input next expense
     # END WHILE
@@ -56,11 +55,11 @@ def main():
     total_expenses = 0
 
     print("Enter your expenses for the month.")
-    print("Enter -1 when you are finished.")
+    print("Enter 0 when you are finished.")
 
     expense = float(input("Enter an expense: "))
 
-    while expense != -1:
+    while expense != 0:
         total_expenses += expense
         expense = float(input("Enter an expense: "))
 
