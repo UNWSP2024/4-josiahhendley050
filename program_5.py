@@ -65,14 +65,15 @@ def main():
 
     difference = budget - total_expenses
 
-    print("\nTotal expenses:", total_expenses)
+    print("\nTotal expenses: " + str(total_expenses))
 
     if difference > 0:
-        print("You are under budget by $", difference)
+        print("You are under budget by $ " + str(difference))
     elif difference < 0:
-        print("You are over budget by $", abs(difference))
+        print("You are over budget by $ " + str(abs(difference)))
     else:
         print("You spent exactly your budget.")
+
 
 if __name__ == '__main__':
     main()
