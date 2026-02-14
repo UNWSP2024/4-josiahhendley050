@@ -12,23 +12,23 @@
 #Rainfall Program
 
 def main():
-years = int(input("Enter the number of years: "))
+    years = int(input("Enter the number of years: "))
 
-total_rainfall = 0
-total_months = years * 12
+    total_rainfall = 0
+    total_months = years * 12
 
-for year in range(1, years + 1):
-    print("Year", year)
+    for year in range(1, years + 1):
+        print("Year", year)
     
-    for month in range(1, 12 + 1):
-        rainfall = float(input(f"Enter inches of rainfall for month {month}: "))
-        total_rainfall += rainfall
+        for month in range(1, 12 + 1):
+            rainfall = float(input(f"Enter inches of rainfall for month {month}: "))
+            total_rainfall += rainfall
+    
+    average_rainfall = total_rainfall / total_months
 
-average_rainfall = total_rainfall / total_months
-
-print("\nNumber of months:", total_months)
-print("Total inches of rainfall:", total_rainfall)
-print("Average rainfall per month:", average_rainfall)
+    print("\nNumber of months:", total_months)
+    print("Total inches of rainfall:", total_rainfall)
+    print("Average rainfall per month:", average_rainfall)
   
 
 
