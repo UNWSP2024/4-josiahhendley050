@@ -15,11 +15,11 @@ def main():
     count = 1
 
     while count <= num_movies:
-    movie = input("Enter the movie name: ")
-    tickets = int(input("How many tickets for this movie? "))
+        movie = input("Enter the movie name: ")
+        tickets = int(input("How many tickets for this movie? "))
     
-    total_tickets += tickets
-    count += 1
+        total_tickets += tickets
+        count += 1
     
     print("Total number of tickets desired:", total_tickets)
 
