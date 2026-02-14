@@ -9,19 +9,19 @@
 
 def main():
 
-num_movies = int(input("How many movies do you want to enter? "))
+    num_movies = int(input("How many movies do you want to enter? "))
 
-total_tickets = 0
-count = 1
+    total_tickets = 0
+    count = 1
 
-while count <= num_movies:
+    while count <= num_movies:
     movie = input("Enter the movie name: ")
     tickets = int(input("How many tickets for this movie? "))
     
     total_tickets += tickets
     count += 1
-
-print("Total number of tickets desired:", total_tickets)
+    
+    print("Total number of tickets desired:", total_tickets)
 
 if __name__ == '__main__':
     main()
